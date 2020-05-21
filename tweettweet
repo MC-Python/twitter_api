@@ -4,12 +4,18 @@
 import tweepy
 import time
 
+#API key and secret : the user name and password that represent my  Twitter developer app when making API requests. 
+
 consumer_key = ''
 consumer_secret = ''
+
+# Access token and secret:An access token and access token secret are user-specific credentials used to authenticate OAuth 1.0a API requests. 
+# They specify the Twitter account the request is made on behalf of.
+
 access_token = ''
 access_token_secret = ''
 
-# authentication by Outh1.0a
+# authentication by OAuth1.0a method
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
