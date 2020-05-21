@@ -12,7 +12,6 @@ access_token_secret = ''
 # authentication by Outh1.0a
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
@@ -21,6 +20,8 @@ user = api.me()
 print (user.name) #prints your name.
 print (user.screen_name)
 print (user.followers_count)
+
+#searching content
 
 search = "zerotomastery"
 numberOfTweets = 2
@@ -42,7 +43,7 @@ for follower in limit_handle(tweepy.Cursor(api.followers).items()):
     follower.follow()
 
 
-# Be a narcisist and love your own tweets. or retweet anything with a keyword!
+# like tweets or retweet anything with a keyword!
 
 for tweet in tweepy.Cursor(api.search, search).items(numberOfTweets):
     try:
