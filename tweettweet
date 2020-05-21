@@ -10,12 +10,11 @@ consumer_key = ''
 consumer_secret = ''
 
 # Access token and secret:An access token and access token secret are user-specific credentials used to authenticate OAuth 1.0a API requests. 
-# They specify the Twitter account the request is made on behalf of.
 
 access_token = ''
 access_token_secret = ''
 
-# authentication by OAuth1.0a method
+# authentication by OAuth1.0a method. Authentication is handled by the tweepy.AuthHandler class.
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
