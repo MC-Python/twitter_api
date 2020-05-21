@@ -23,7 +23,7 @@ print (user.followers_count)
 
 #searching content
 
-search = "zerotomastery"
+search = "python"
 numberOfTweets = 2
 
 # RateLimitError Handler
